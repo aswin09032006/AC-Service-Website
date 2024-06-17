@@ -1,0 +1,143 @@
+.process-flow {
+  text-align: center;
+  padding: 20px;
+}
+
+.process-flow h2 {
+  color: #167d72;
+  padding-top: 60px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.process-flow h3 {
+  color: #3c8b78;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.step {
+  width: 20%;
+  transition: transform 0.3s ease;
+  margin: 10px; /* Add margin for better spacing */
+  box-sizing: border-box; /* Ensure padding and margin are included in the width */
+}
+
+.step:hover {
+  transform: translateY(-10px);
+}
+
+.step .icon {
+  background-color: #167d72;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.step .icon .step-icon {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.step h4 {
+  color: #333;
+  margin-bottom: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.step p {
+  color: #777;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.step:hover .icon {
+  background-color: #3c8b78;
+  transform: scale(1.1);
+}
+
+.step:hover h4 {
+  color: #167d72;
+  transform: scale(1.05);
+}
+
+.step:hover p {
+  color: #3c8b78;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .step {
+    width: 25%; /* Adjust width for better spacing */
+  }
+}
+
+@media (max-width: 768px) {
+  .process-flow h2 {
+    font-size: 1.5em; /* Adjust font size */
+    padding-top: 40px;
+  }
+
+  .process-flow h3 {
+    font-size: 1.2em; /* Adjust font size */
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .steps {
+    flex-direction: column; /* Stack steps vertically */
+    align-items: center; /* Center align steps */
+  }
+
+  .step {
+    width: 80%; /* Full width for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .process-flow h2 {
+    font-size: 1.2em; /* Adjust font size */
+    padding-top: 30px;
+  }
+
+  .process-flow h3 {
+    font-size: 1em; /* Adjust font size */
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .step {
+    width: 100%; /* Full width on small screens */
+    margin: 10px 0; /* Adjust margin for better spacing */
+  }
+
+  .step .icon {
+    width: 60px; /* Smaller icon size */
+    height: 60px;
+  }
+
+  .step .icon .step-icon {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .step h4 {
+    font-size: 1.2em; /* Adjust font size */
+  }
+
+  .step p {
+    font-size: 1em; /* Adjust font size */
+  }
+}

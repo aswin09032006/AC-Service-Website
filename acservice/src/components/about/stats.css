@@ -1,0 +1,70 @@
+.stats-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px; /* Padding around the entire stats container */
+    background-color: #f9f9f9;
+}
+
+.stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 40px; /* Padding inside each stat box */
+    margin: 20px; /* Optional: Add margin to create space between each stat box */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33% - 40px); /* Adjust width for three columns layout */
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.count {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .stats-container{
+        background-color: transparent;
+    }
+    .stat-box {
+        width: calc(50% - 40px); /* Adjust width for two columns layout */
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-container{
+        background-color: transparent;
+    }
+    .stat-box {
+        width: calc(100% - 40px); /* Adjust width for one column layout */
+        margin: 10px 0; /* Adjust margin for better spacing on small screens */
+        padding: 20px; /* Reduce padding for small screens */
+    }
+
+    .icon {
+        font-size: 30px; /* Reduce icon size */
+    }
+
+    .count {
+        font-size: 20px; /* Reduce count font size */
+    }
+
+    .label {
+        font-size: 14px; /* Reduce label font size */
+    }
+}

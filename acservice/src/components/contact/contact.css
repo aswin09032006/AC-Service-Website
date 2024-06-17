@@ -1,0 +1,159 @@
+.contact-us {
+  padding: 20px;
+  color: #000; /* Changed to black for light theme */
+  background-color: #f5f5f5; /* Changed to light gray for light theme */
+}
+
+.contact-us h1 {
+  padding-top: 10vh;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form {
+  margin: 0 auto;
+}
+
+.form h2 {
+  padding: 7px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form label {
+  margin-bottom: 5px;
+}
+
+.form textarea {
+  height: 150px;
+}
+
+.form input,
+.form select,
+.form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Changed to a light gray border */
+  font-size: 16px;
+  background-color: #fff; /* Changed to white for light theme */
+  color: #000; /* Changed to black for light theme */
+}
+
+.form button {
+  padding: 10px;
+  background-color: #007bff; /* Changed to blue for light theme */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-info {
+  padding: 20px;
+  background-color: #e9ecef; /* Changed to a light gray for light theme */
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-info h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info div {
+  margin-bottom: 20px;
+}
+
+.contact-info h3 {
+  margin-bottom: 5px;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff; /* Changed to blue for light theme */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: #fff; /* Changed to white for light theme */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #0056b3; /* Changed to darker blue for light theme */
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  color: #6c757d; /* Changed to gray for light theme */
+  font-size: 0.9em;
+  height: 50px;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .form-container {
+    flex-direction: row;
+  }
+
+  .form {
+    flex: 0.6;
+    margin-right: 20px;
+  }
+
+  .contact-info {
+    flex: 0.4;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .form {
+    width: 100%;
+  }
+
+  .social-links {
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
