@@ -18,10 +18,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_7cty0df",
-        "template_fucezh3",
+        "service_5rwm9bp",
+        "template_b1mjj95",
         form.current,
-        "b5_hdd1PJaddlSST2"
+        "SX394nnzbV1dKmgex"
       )
       .then(
         () => {
@@ -116,7 +116,7 @@ const Contact = () => {
           </div>
           <div>
             <h3>Email Address</h3>
-            <p>mooderncooler@gmail.com</p>
+            <p>moderncoolers2011@gmail.com</p>
           </div>
           <div>
             <h3>Location</h3>

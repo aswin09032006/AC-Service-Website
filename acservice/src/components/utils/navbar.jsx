@@ -7,7 +7,7 @@ const Navbar = () => {
       <input type="checkbox" id="sidebar-active" />
       <h3 className="logo">
         <a href="/" style={{ textDecoration: "none", color: "light blue" }}>
-          Modern Cooler
+          Modern Coolers
         </a>
       </h3>
       <label htmlFor="sidebar-active" className="open-sidebar-button">
