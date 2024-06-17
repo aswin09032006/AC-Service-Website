@@ -95,11 +95,26 @@ label {
 }
 
 @media (max-width: 768px) {
+  .reserve-form-group input[type="date"],
+  .reserve-form-group input[type="time"],
+  /* .reserve-form-group input[type="text"], */
+  .reserve-form-group input[type="email"],
+  .reserve-form-group input[type="tel"],
+  .reserve-form-group select {
+    width: 40vw;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.64);
+    color: black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 10px;
+  }
+
   .reserve-form-grid {
     grid-template-columns: 1fr;
     overflow-y: auto; /* Ensure proper scrolling */
   }
-
 
   .book-now-button {
     width: 100%;
