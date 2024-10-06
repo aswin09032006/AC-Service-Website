@@ -18,9 +18,13 @@ async function commitForPast15Days() {
 
     // Add and commit for the specific date
     await git.add([filePath]);
-    await git.commit(`update`, { '--date': DATE }); // Set commit date and message
+    await git.commit(`updated on ${DATE}`, { '--date': DATE }); // Set commit date and message
   }
 
   // Push all the commits after the loop
   await git.push();
 }
+
+commitForPast15Days().then(() => {
+  console.log('👍');
+});
