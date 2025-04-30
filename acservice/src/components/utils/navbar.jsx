@@ -6,10 +6,13 @@ const Navbar = () => {
     <div className="navbar-container">
       <input type="checkbox" id="sidebar-active" />
       <h3 className="logo">
-        <a href="/" style={{ textDecoration: "none", color: "light blue" }}>
-          Modern Coolers
-        </a>
+        <a href="/" className="modern-logo">Modern Coolers</a>
       </h3>
+
+      <div className="company-name">
+        <a href="/" className="modern-logo">Modern Coolers</a>
+      </div>
+
       <label htmlFor="sidebar-active" className="open-sidebar-button">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -13,6 +13,24 @@
   box-sizing: border-box;
 }
 
+.modern-logo {
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #00bfff, #1e90ff, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.modern-logo:hover {
+  transform: scale(1.05);
+}
+
+
 .navbar-links-header {
   display: flex;
   align-items: center;
